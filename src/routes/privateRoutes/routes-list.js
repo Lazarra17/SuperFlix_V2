@@ -1,0 +1,13 @@
+import Home from "../../pages/Home";
+import TvShows from "../../pages/TvShows";
+import MyList from "../../pages/MyList";
+import Movies from "../../pages/Movies";
+
+const AdminRoutes = [
+  { exact: true, name: "Home", path: "/home", component: Home },
+  { exact: true, name: "TvShows", path: "/tv-shows", component: TvShows },
+  { exact: true, name: "MyList", path: "/my-list", component: MyList },
+  { exact: true, name: "Movies", path: "/movies", component: Movies },
+];
+
+export default AdminRoutes;
