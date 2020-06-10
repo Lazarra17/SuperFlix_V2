@@ -28,6 +28,9 @@ const Header = (props) => {
             <Nav.Link href="/my-list" active={activeBasePath === "my-list"}>
               My List
             </Nav.Link>
+            <Nav.Link href="/profile" active={activeBasePath === "profile"}>
+              Profile
+            </Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link href="#deets">More deets</Nav.Link>
