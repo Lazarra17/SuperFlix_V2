@@ -9,7 +9,7 @@ const Routes = ({ component: Component, ...rest }) => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" component={SingIn} exact />
+        <Route path="/login" component={SingIn} exact />
         {AdminRoutes.map((route, key) => {
           return (
             <PrivateRoute

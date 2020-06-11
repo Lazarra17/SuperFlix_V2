@@ -6,7 +6,6 @@ const Header = (props) => {
   let activeBasePath = props.location.pathname.split("/");
   activeBasePath = activeBasePath[1] || "dashboard";
 
-  console.log("activeBasePath ->", activeBasePath);
   return (
     <>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -16,7 +15,12 @@ const Header = (props) => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/home" active={activeBasePath === "home"}>
+            <Nav.Link
+              href="/home"
+              active={
+                activeBasePath === "home" || activeBasePath === "dashboard"
+              }
+            >
               Home
             </Nav.Link>
             <Nav.Link href="/tv-shows" active={activeBasePath === "tv-shows"}>

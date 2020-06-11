@@ -4,6 +4,7 @@ import MyList from "../../pages/MyList";
 import Movies from "../../pages/Movies";
 
 const AdminRoutes = [
+  { exact: true, name: "Home", path: "/", component: Home },
   { exact: true, name: "Home", path: "/home", component: Home },
   { exact: true, name: "TvShows", path: "/tv-shows", component: TvShows },
   { exact: true, name: "MyList", path: "/my-list", component: MyList },
