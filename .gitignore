@@ -2,8 +2,11 @@
 
 # dependencies
 /node_modules
+/node_modules2
 
 package-lock.json
+package2.json
+yarn2.lock
 
 # misc
 .DS_Store
