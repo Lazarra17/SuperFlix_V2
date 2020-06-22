@@ -15,7 +15,15 @@ export const HeaderWrapper = styled.div`
     .dropdown-toggle:after {
     display: none;
 }
+.search-field{
+width: 350px;
+margin-top: 5px;
 
+}
+.mu-4{
+margin-top: 5px;
+
+}
 .dropdown-menu{
 background-color: #343a40;
 

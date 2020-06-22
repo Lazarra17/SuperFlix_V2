@@ -11,7 +11,7 @@ const TvShows = () => {
   return (
     <Fragment>
       <Helmet>
-        <title>Home | Super Flix</title>
+        <title>Movies | Super Flix</title>
       </Helmet>
       <Wrapper>
         <Container className="mt-5">

@@ -1,18 +1,21 @@
 import React, { Fragment } from "react";
 import { Helmet } from "react-helmet";
-import { Jumbotron } from "react-bootstrap";
-import { Content } from "./styles";
-const MyList = () => {
+import { Container } from "react-bootstrap";
+import { Wrapper } from "./styles";
+import MyListComponent from "./includes/myList";
+const TvShows = () => {
   return (
     <Fragment>
       <Helmet>
-        <title>MyList | Super Flix</title>
+        <title>Movies | Super Flix</title>
       </Helmet>
-      <Content>
-        <Jumbotron>MyList</Jumbotron>
-      </Content>
+      <Wrapper>
+        <Container className="mt-5">
+          <MyListComponent />
+        </Container>
+      </Wrapper>
     </Fragment>
   );
 };
 
-export default MyList;
+export default TvShows;
