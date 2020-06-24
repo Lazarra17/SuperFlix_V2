@@ -1,6 +1,15 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { Navbar, Nav, NavDropdown,Button, FormGroup, FormControl, ControlLabel,Form,Col,InputGroup } from "react-bootstrap";
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Button,
+  FormControl,
+  Form,
+  Col,
+  InputGroup,
+} from "react-bootstrap";
 import profile from "../../../../assets/images/icon-white.png";
 import profileIcon from "../../../../assets/temp_imgs/profile-icon.png";
 import { HeaderWrapper } from "../styles";
@@ -48,30 +57,26 @@ const Header = (props) => {
             </Nav.Link>
           </Nav>
           <Nav>
-          
-          <form class="form-inline my-2 my-lg-0">
-          <Form.Row className="align-items-center">
-            
-            <Col xs="auto">
-              <Form.Label htmlFor="inlineFormInputGroup" srOnly>
-                Username
-              </Form.Label>
-              <InputGroup className="mb-2">
-                <FormControl id="inlineFormInputGroup" placeholder="Search..." className="search-field" />
-              </InputGroup>
-            
-            </Col>
+            <form className="form-inline my-2 my-lg-0">
+              <Form.Row className="align-items-center">
+                <Col xs="auto">
+                  <Form.Label htmlFor="inlineFormInputGroup" srOnly>
+                    Username
+                  </Form.Label>
+                  <InputGroup className="mb-2">
+                    <FormControl
+                      id="inlineFormInputGroup"
+                      placeholder="Search..."
+                      className="search-field"
+                    />
+                  </InputGroup>
+                </Col>
 
-            <Button type="submit" className="mb-2 mr-4 mu-4">
-              Submit
-            </Button>
-          </Form.Row>
-
-          </form>
-          
-
-
-
+                <Button type="submit" className="mb-2 mr-4 mu-4">
+                  Submit
+                </Button>
+              </Form.Row>
+            </form>
 
             <NavDropdown
               className="profile-section"
